@@ -20,8 +20,18 @@ class HomePageStates extends State<HomePage> {
           title: Text("Hello, Mobile World!"),
           actions: [CustomSwitch()],
         ),
-        body:  Center(
-              child: CustomSwitch()),
+        body:  Container(
+          width: double.infinity ,
+          height: double.infinity ,
+          child: Column(
+            mainAxisAlignment: MainAxisAlignment.center, //alinhamento vert
+            // crossAxisAlignment: CrossAxisAlignment.start, // Alinhamento Horiz
+            children: [
+              Text('Contador: $counter', style: TextStyle(fontSize: 20.0),),
+              CustomSwitch(),
+            ],
+          ),
+        ),
         floatingActionButton: FloatingActionButton(
             child: const Icon(Icons.add),
             onPressed: () => {
