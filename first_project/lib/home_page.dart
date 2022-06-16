@@ -27,8 +27,27 @@ class HomePageStates extends State<HomePage> {
             mainAxisAlignment: MainAxisAlignment.center, //alinhamento vert
             // crossAxisAlignment: CrossAxisAlignment.start, // Alinhamento Horiz
             children: [
+              
               Text('Contador: $counter', style: TextStyle(fontSize: 20.0),),
               CustomSwitch(),
+              Container(height: 50),
+              Row(
+            mainAxisAlignment: MainAxisAlignment.spaceAround, //alinhamento vert
+            crossAxisAlignment: CrossAxisAlignment.start, // Alinhamento Horiz
+                children: [Container(
+                   width: 50,
+                   height: 50,
+                   color: Colors.black
+                ),Container(
+                   width: 50,
+                   height: 50,
+                   color: Colors.black
+                ),Container(
+                   width: 50,
+                   height: 50,
+                   color: Colors.black
+                )]
+              )
             ],
           ),
         ),
