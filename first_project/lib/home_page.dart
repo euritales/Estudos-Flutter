@@ -23,13 +23,31 @@ class HomePageStates extends State<HomePage> {
         body:  Container(
           width: double.infinity ,
           height: double.infinity ,
-          child: Column(
-            mainAxisAlignment: MainAxisAlignment.center, //alinhamento vert
-            // crossAxisAlignment: CrossAxisAlignment.start, // Alinhamento Horiz
+          child: ListView(
+            scrollDirection: Axis.horizontal,
             children: [
-              
               Text('Contador: $counter', style: TextStyle(fontSize: 20.0),),
               CustomSwitch(),
+              CustomSwitch(),
+              CustomSwitch(),
+              CustomSwitch(),
+              CustomSwitch(),
+              CustomSwitch(),
+              CustomSwitch(),
+              CustomSwitch(),
+              CustomSwitch(),
+              CustomSwitch(),
+              CustomSwitch(),
+              CustomSwitch(),
+              CustomSwitch(),
+              CustomSwitch(),
+              CustomSwitch(),
+              CustomSwitch(),
+              CustomSwitch(),
+              CustomSwitch(),
+              CustomSwitch(),
+              CustomSwitch(),
+
               Container(height: 50),
               Row(
             mainAxisAlignment: MainAxisAlignment.spaceAround, //alinhamento vert
@@ -37,7 +55,8 @@ class HomePageStates extends State<HomePage> {
                 children: [Container(
                    width: 50,
                    height: 50,
-                   color: Colors.black
+                   color: Colors.black,
+
                 ),Container(
                    width: 50,
                    height: 50,
@@ -47,9 +66,8 @@ class HomePageStates extends State<HomePage> {
                    height: 50,
                    color: Colors.black
                 )]
+              )]
               )
-            ],
-          ),
         ),
         floatingActionButton: FloatingActionButton(
             child: const Icon(Icons.add),
